@@ -1,0 +1,21 @@
+ext {
+    android = [
+            compileSdkVersion: 29,
+            buildToolsVersion: "29.0.3",
+            minSdkVersion    : 14,
+            targetSdkVersion : 29,
+            versionCode      : 1,
+            versionName      : "1.0.0"
+    ]
+
+    def versions = [
+            appcompat: "1.1.0"
+    ]
+
+    dependencies = [
+            annotation      : "androidx.annotation:annotation:${versions.appcompat}",
+            appcompat       : "androidx.appcompat:appcompat:${versions.appcompat}",
+            material        : "com.google.android.material:material:${versions.appcompat}",
+            recyclerview    : "androidx.recyclerview:recyclerview:${versions.appcompat}"
+    ]
+}
